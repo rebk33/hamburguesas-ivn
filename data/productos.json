@@ -101,7 +101,7 @@
     "precio": 25,
     "categoria": "bebidas",
     "descripcion": "Refresco de lata Coca-Cola bien frío.",
-    "imagen": "img/refresco.jpg"
+    "imagen": "img/coca.jpg"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "precio": 25,
     "categoria": "bebidas",
     "descripcion": "Refresco de lata Manzanita Sol bien frío.",
-    "imagen": "img/refresco.jpg"
+    "imagen": "img/mundet.jpg"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "precio": 25,
     "categoria": "bebidas",
     "descripcion": "Refresco de lata Sprite bien frío.",
-    "imagen": "img/refresco.jpg"
+    "imagen": "img/sprite.jpg"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "precio": 25,
     "categoria": "bebidas",
     "descripcion": "Refresco de lata Fanta bien frío.",
-    "imagen": "img/refresco.jpg"
+    "imagen": "img/fanta.jpg"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "precio": 35,
     "categoria": "bebidas",
     "descripcion": "Agua fresca de horchata natural del día.",
-    "imagen": "img/aguas.jpg"
+    "imagen": "img/agua-horchata.jpg"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "precio": 35,
     "categoria": "bebidas",
     "descripcion": "Agua fresca de jamaica natural del día.",
-    "imagen": "img/aguas.jpg"
+    "imagen": "img/agua-jamaica.jpg"
   },
   {
     "id": 19,
@@ -149,6 +149,6 @@
     "precio": 35,
     "categoria": "bebidas",
     "descripcion": "Agua fresca de limón con chía natural del día.",
-    "imagen": "img/aguas.jpg"
+    "imagen": "img/agua-limon.jpg"
   }
 ]
