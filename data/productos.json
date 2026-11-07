@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hamburguesa Sencilla",
+    "precio": 45,
+    "categoria": "hamburguesas",
+    "descripcion": "Carne de res, mezcla de quesos, tocino, lechuga, jitomate y cebolla.",
+    "imagen": "img/burger-sencilla.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Hamburguesa Norteña",
+    "precio": 55,
+    "categoria": "hamburguesas",
+    "descripcion": "Carne de res, mezcla de quesos, chorizo español y tocino.",
+    "imagen": "img/burger-nortena.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Hamburguesa Hawaiana",
+    "precio": 55,
+    "categoria": "hamburguesas",
+    "descripcion": "Carne de res, mezcla de quesos, piña asada.",
+    "imagen": "img/burger-hawaiana.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Hamburguesa Champiñones",
+    "precio": 70,
+    "categoria": "hamburguesas",
+    "descripcion": "Carne de res, mezcla de quesos, champiñones salteados y tocino.",
+    "imagen": "img/burger-champonones.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Hamburguesa BBQ",
+    "precio": 70,
+    "categoria": "hamburguesas",
+    "descripcion": "Carne de res, mezcla de quesos, aros de cebolla y tocino con salsa BBQ.",
+    "imagen": "img/burger-bbq.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Hamburguesa Tijuanas",
+    "precio": 70,
+    "categoria": "hamburguesas",
+    "descripcion": "Carne de res, chorizo español, aros de cebolla BBQ y tocino crunch.",
+    "imagen": "img/burger-tijuanas.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Hamburguesa Doble (Adicional)",
+    "precio": 15,
+    "categoria": "hamburguesas",
+    "descripcion": "Carne extra y doble porción.",
+    "imagen": "img/burger-extra.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Alitas Búfalo (10 pz)",
+    "precio": 130,
+    "categoria": "alitas",
+    "descripcion": "Deliciosas alitas sabor búfalo (Opción Hot disponible).",
+    "imagen": "img/alitas.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Alitas Habanero (10 pz)",
+    "precio": 130,
+    "categoria": "alitas",
+    "descripcion": "Alitas bañadas en salsa habanero picante.",
+    "imagen": "img/alitas-habanero.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Alitas Tamarindo (10 pz)",
+    "precio": 130,
+    "categoria": "alitas",
+    "descripcion": "Alitas con salsa agridulce de tamarindo.",
+    "imagen": "img/alitas-tamarindo.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Alitas Queso Parmesano (10 pz)",
+    "precio": 130,
+    "categoria": "alitas",
+    "descripcion": "Alitas espolvoreadas con queso parmesano.",
+    "imagen": "img/alitas-queso.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Alitas BBQ (10 pz)",
+    "precio": 130,
+    "categoria": "alitas",
+    "descripcion": "Alitas bañadas en salsa barbacoa clásica.",
+    "imagen": "img/alitas-bbq.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Coca-Cola (Lata 355ml)",
+    "precio": 25,
+    "categoria": "bebidas",
+    "descripcion": "Refresco de lata Coca-Cola bien frío.",
+    "imagen": "img/refresco.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Manzanita (Lata 355ml)",
+    "precio": 25,
+    "categoria": "bebidas",
+    "descripcion": "Refresco de lata Manzanita Sol bien frío.",
+    "imagen": "img/refresco.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Sprite (Lata 355ml)",
+    "precio": 25,
+    "categoria": "bebidas",
+    "descripcion": "Refresco de lata Sprite bien frío.",
+    "imagen": "img/refresco.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Fanta (Lata 355ml)",
+    "precio": 25,
+    "categoria": "bebidas",
+    "descripcion": "Refresco de lata Fanta bien frío.",
+    "imagen": "img/refresco.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Agua de Horchata (1L)",
+    "precio": 35,
+    "categoria": "bebidas",
+    "descripcion": "Agua fresca de horchata natural del día.",
+    "imagen": "img/aguas.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Agua de Jamaica (1L)",
+    "precio": 35,
+    "categoria": "bebidas",
+    "descripcion": "Agua fresca de jamaica natural del día.",
+    "imagen": "img/aguas.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Agua de Limón con Chía (1L)",
+    "precio": 35,
+    "categoria": "bebidas",
+    "descripcion": "Agua fresca de limón con chía natural del día.",
+    "imagen": "img/aguas.jpg"
+  }
+]

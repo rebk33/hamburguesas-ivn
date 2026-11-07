@@ -1,0 +1,43 @@
+:root {
+  --bg-color: #0d0d12;
+  --card-bg: #161622;
+  --accent-pink: #ff2a85;
+  --pink-hover: #e02473;
+  --text-main: #ffffff;
+  --text-muted: #a0a0b5;
+  --border-color: #272738;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+body { background-color: var(--bg-color); color: var(--text-main); padding-bottom: 80px; }
+
+header { background: #12121c; border-bottom: 2px solid var(--accent-pink); padding: 20px; text-align: center; }
+header h1 { color: var(--accent-pink); font-size: 2.2rem; }
+
+.container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+.section-title { border-left: 4px solid var(--accent-pink); padding-left: 10px; margin: 30px 0 20px 0; font-size: 1.4rem; }
+
+.info-box { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 30px; }
+.map-container { width: 100%; height: 250px; margin-top: 15px; border-radius: 8px; overflow: hidden; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+.card img { width: 100%; height: 180px; object-fit: cover; }
+.card-body { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; gap: 10px; }
+.card-desc { font-size: 0.85rem; color: var(--text-muted); }
+.item-note { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); background: #0f0f18; color: white; font-size: 0.8rem; }
+.price-row { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+.price { font-size: 1.3rem; font-weight: bold; color: var(--accent-pink); }
+
+.btn-add { background: var(--accent-pink); color: white; border: none; padding: 8px 15px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+.btn-add:hover { background: var(--pink-hover); }
+
+.cart-floating { position: fixed; bottom: 20px; right: 20px; background: var(--accent-pink); color: white; padding: 15px 25px; border-radius: 30px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 15px rgba(255, 42, 133, 0.4); z-index: 100; }
+
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 200; justify-content: center; align-items: center; }
+.modal-content { background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; border-radius: 12px; width: 90%; max-width: 500px; max-height: 90vh; overflow-y: auto; }
+.radio-group { display: flex; gap: 15px; margin: 15px 0; }
+.radio-option { background: #0f0f18; border: 1px solid var(--border-color); padding: 10px; border-radius: 8px; flex: 1; text-align: center; cursor: pointer; }
+
+footer { margin-top: 50px; padding: 25px; text-align: center; color: var(--text-muted); border-top: 1px solid var(--border-color); }
+.watermark { margin-top: 10px; font-size: 0.85rem; color: var(--accent-pink); opacity: 0.9; font-weight: 500; }

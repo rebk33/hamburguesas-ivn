@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburguesas y alitas TIJUANAS Hamburguer</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍔 Hamburguesas y alitas TIJUANAS Hamburguer</h1>
+  </header>
+
+  <div class="container">
+    <!-- Ubicación -->
+    <div class="info-box">
+      <h2 class="section-title" style="margin-top:0;">📍 Ubicación</h2>
+      <p id="ubi-texto">Ven a visitarnos o solicita tu pedido a domicilio.</p>
+      <div class="map-container">
+       <iframe id="ubi-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.848805727181!2d-98.27989392347596!3d19.02735635349581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfcbf6484e5555%3A0x6739ac1216d55ea2!2sCarr.%20Federal%20Atlixco-Puebla%2C%20Tecoxotitla%2C%2074367%20San%20Bernardino%20Tlaxcalancingo%2C%20Pue.!5e0!3m2!1ses!2smx!4v1680000000000!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <!-- Horarios -->
+    <div class="info-box">
+      <h2 class="section-title" style="margin-top:0;">🕒 Horarios de Atención</h2>
+      <p id="horarios-texto">Lunes a Domingo: 4:00 PM - 11:00 PM</p>
+    </div>
+
+    <!-- Menú por Categorías -->
+    <h2 class="section-title">🍔 Hamburguesas</h2>
+    <div id="grid-hamburguesas" class="grid"></div>
+
+    <h2 class="section-title">🍗 Alitas</h2>
+    <div id="grid-alitas" class="grid"></div>
+
+    <h2 class="section-title">🥤 Bebidas</h2>
+    <div id="grid-bebidas" class="grid"></div>
+  </div>
+
+  <div class="cart-floating" onclick="abrirCarrito()">
+    🛒 Ver Carrito (<span id="cart-count">0</span>)
+  </div>
+
+  <!-- Modal del Carrito -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <h2>Tu Pedido</h2>
+      <div id="cart-items" style="margin: 15px 0;"></div>
+      
+      <h3>Tipo de Servicio:</h3>
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" name="entrega" value="Domicilio" checked onchange="toggleEntrega()"> 🛵 A Domicilio
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="entrega" value="Recoger" onchange="toggleEntrega()"> 🛍️ Recoger en Tienda
+        </label>
+      </div>
+
+      <div id="dir-container" style="margin-bottom: 15px;">
+        <input type="text" id="cart-dir" placeholder="Escribe tu dirección de entrega..." style="width:100%; padding:10px; border-radius:6px; background:#0d0d12; color:white; border:1px solid var(--border-color);">
+      </div>
+
+      <h3 style="margin-bottom:8px;">Forma de Pago:</h3>
+      <select id="cart-pago" style="width:100%; padding:10px; border-radius:6px; background:#0d0d12; color:white; border:1px solid var(--border-color); margin-bottom:15px;">
+        <option value="Efectivo">Efectivo</option>
+        <option value="Transferencia">Transferencia</option>
+        <option value="Tarjeta">Tarjeta (al recibir)</option>
+      </select>
+
+      <h3 style="color:var(--accent-pink);">Total: $<span id="cart-total">0</span></h3>
+
+      <div style="display:flex; gap:10px; margin-top:20px;">
+        <button class="btn-add" style="flex:1; background:#444;" onclick="cerrarCarrito()">Cerrar</button>
+        <button class="btn-add" style="flex:2;" onclick="enviarWhatsApp()">Enviar por WhatsApp 📲</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Hamburguesas y alitas TIJUANAS Hamburguer - Todos los derechos reservados.</p>
+    <div class="watermark">Desarrollado por Alondra Rebeca Ruiz Islas</div>
+    <br>
+    <a href="/admin" style="color:var(--text-muted); font-size:0.8rem; text-decoration:none;">Acceso Administrador 🔒</a>
+  </footer>
+
+  <script src="/js/client.js"></script>
+</body>
+</html>

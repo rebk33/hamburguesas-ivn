@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Hamburguesas y alitas TIJUANAS Hamburguer</title>
+  <style>
+    :root { --bg-color: #0d0d12; --card-bg: #161622; --accent-pink: #ff2a85; --text-main: #ffffff; --border-color: #272738; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+    body { background-color: var(--bg-color); color: var(--text-main); padding-bottom: 50px; }
+    header { background: #12121c; border-bottom: 2px solid var(--accent-pink); padding: 20px; text-align: center; }
+    header h1 { color: var(--accent-pink); }
+    .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+    .box { background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px; border-radius: 12px; margin-bottom: 20px; }
+    input, textarea, select { width: 100%; padding: 10px; margin: 8px 0; border-radius: 6px; border: 1px solid var(--border-color); background: #0d0d12; color: white; }
+    .btn { background: var(--accent-pink); color: white; border: none; padding: 10px 15px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; }
+    .btn-secundario { background: #444; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <header><h1>Panel de Administración</h1></header>
+  <div class="container">
+    <!-- Login -->
+    <div id="login-box" class="box">
+      <h2>Iniciar Sesión</h2>
+      <input type="password" id="pass" placeholder="Contraseña">
+      <button class="btn" onclick="login()">Entrar</button>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="admin-box" class="box" style="display:none;">
+      <h2>Configuración General</h2>
+      <label>Horarios de Atención:</label>
+      <input type="text" id="adm-horarios" value="Lunes a Domingo: 4:00 PM - 11:00 PM">
+      <label>Texto de Ubicación:</label>
+      <input type="text" id="adm-ubi" value="Carr Federal Atlixco-Puebla, Tecoxotitla, 74367 San Bernadino Tlaxcalancingo, Pue.">
+      <button class="btn" style="background:#28a745; margin-bottom:20px;" onclick="guardarConfig()">Guardar Cambios de Tienda</button>
+
+      <hr style="border-color:var(--border-color); margin:20px 0;">
+
+      <h2 id="form-titulo">Agregar Platillo al Menú</h2>
+      <input type="hidden" id="edit-id" value="">
+      <input type="text" id="nombre" placeholder="Nombre del platillo">
+      <input type="number" id="precio" placeholder="Precio ($)">
+      <select id="categoria">
+        <option value="hamburguesas">Hamburguesa</option>
+        <option value="alitas">Alitas</option>
+        <option value="bebidas">Bebida</option>
+      </select>
+      <textarea id="desc" placeholder="Descripción de ingredientes"></textarea>
+      <input type="text" id="img" placeholder="Ruta de imagen (ej: img/refresco.jpg)">
+      
+      <button class="btn" id="btn-guardar" onclick="guardarPlatillo()">Guardar Platillo</button>
+      <button class="btn btn-secundario" id="btn-cancelar" style="display:none;" onclick="limpiarFormulario()">Cancelar Edición</button>
+
+      <h2 style="margin-top:40px;">Lista de Platillos Actuales</h2>
+      <div id="lista-platillos" style="margin-top:15px;"></div>
+    </div>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
